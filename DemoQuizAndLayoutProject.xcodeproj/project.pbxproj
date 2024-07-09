@@ -13,6 +13,8 @@
 		A3CF61102C3D541B007F2CDD /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A3CF610F2C3D541B007F2CDD /* Base */; };
 		A3CF61122C3D541C007F2CDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3CF61112C3D541C007F2CDD /* Assets.xcassets */; };
 		A3CF61152C3D541C007F2CDD /* Base in Resources */ = {isa = PBXBuildFile; fileRef = A3CF61142C3D541C007F2CDD /* Base */; };
+		A3CF611D2C3D6BC2007F2CDD /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CF611C2C3D6BC2007F2CDD /* Question.swift */; };
+		A3CF611F2C3D6BDA007F2CDD /* QuizBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CF611E2C3D6BDA007F2CDD /* QuizBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		A3CF61112C3D541C007F2CDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3CF61142C3D541C007F2CDD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3CF61162C3D541C007F2CDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3CF611C2C3D6BC2007F2CDD /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		A3CF611E2C3D6BDA007F2CDD /* QuizBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,39 @@
 			children = (
 				A3CF61082C3D541B007F2CDD /* AppDelegate.swift */,
 				A3CF610A2C3D541B007F2CDD /* SceneDelegate.swift */,
-				A3CF610C2C3D541B007F2CDD /* ViewController.swift */,
-				A3CF610E2C3D541B007F2CDD /* Main.storyboard */,
+				A3CF61202C3D6BE4007F2CDD /* Model */,
+				A3CF61212C3D6BED007F2CDD /* View */,
+				A3CF61222C3D6BF8007F2CDD /* Controller */,
 				A3CF61112C3D541C007F2CDD /* Assets.xcassets */,
 				A3CF61132C3D541C007F2CDD /* LaunchScreen.storyboard */,
 				A3CF61162C3D541C007F2CDD /* Info.plist */,
 			);
 			path = DemoQuizAndLayoutProject;
+			sourceTree = "<group>";
+		};
+		A3CF61202C3D6BE4007F2CDD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A3CF611C2C3D6BC2007F2CDD /* Question.swift */,
+				A3CF611E2C3D6BDA007F2CDD /* QuizBrain.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A3CF61212C3D6BED007F2CDD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A3CF610E2C3D541B007F2CDD /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A3CF61222C3D6BF8007F2CDD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A3CF610C2C3D541B007F2CDD /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +168,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3CF611F2C3D6BDA007F2CDD /* QuizBrain.swift in Sources */,
 				A3CF610D2C3D541B007F2CDD /* ViewController.swift in Sources */,
+				A3CF611D2C3D6BC2007F2CDD /* Question.swift in Sources */,
 				A3CF61092C3D541B007F2CDD /* AppDelegate.swift in Sources */,
 				A3CF610B2C3D541B007F2CDD /* SceneDelegate.swift in Sources */,
 			);
@@ -218,7 +250,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -275,7 +307,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -300,6 +332,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,6 +361,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
